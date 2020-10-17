@@ -1,4 +1,5 @@
 import os
+from FinanceTest import *
 
 
 userInput = ""
@@ -15,6 +16,8 @@ while("quit" not in userInput.lower()): #Read user Input
     stockData = os.path.join(r'/DataBase', stockTemp)
 
     #Validate Stock Data
+    ZacksRec(Stock)
+    CNNRec(Stock)
     if(os.path.exists(stockData)):
         with open(stockData) as f:
             stockFile = f.read()
