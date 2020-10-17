@@ -3,10 +3,13 @@ from selenium.webdriver.common.keys import Keys
 from PIL import Image
 
 #Zacks
+options = webdriver.ChromeOptions()
+options.binary_location = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+chrome_driver_binary = "chromedriver"
 
 def ZacksRec(StockTicker):
     
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(chrome_driver_binary, chrome_options = options)
     Zacks = "https://zacks.com/stock/quote/" + StockTicker;
     driver.get(Zacks);
 
@@ -23,7 +26,7 @@ def ZacksRec(StockTicker):
 
 def CNNRec(StockTicker):
     
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(chrome_driver_binary, chrome_options = options)
     CNN = "https://money.cnn.com/quote/forecast/forecast.html?symb=" + StockTicker;
     driver.get(CNN);
 
