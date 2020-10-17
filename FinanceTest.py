@@ -11,7 +11,12 @@ def ZacksRec(StockTicker):
     driver.get(Zacks);
 
     Rec = driver.find_element_by_id("quote_ribbon_v2");
-    Rec.screenshot("Zacks (" + StockTicker + ").png");
+    Rec.screenshot("Zacks.png");
+    
+    im = Image.open("Zacks.png");
+    im.show();
+    
+    
     driver.close();
 
 #CNN Money
@@ -29,15 +34,11 @@ def CNNRec(StockTicker):
     width, height = im.size;
 
     im = im.crop((0, 0, width, 430));
-    im = im.save("CNN (" + StockTicker + ").png");
+    im.show();
     
     driver.close();
     
 
-StockTicker = "NFLX"
-ZacksRec(StockTicker);
-CNNRec(StockTicker);
-    
   
     
 
