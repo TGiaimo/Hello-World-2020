@@ -3,7 +3,7 @@ from selenium import webdriver
 import string
 
 driver = webdriver.Chrome('C:\\Users\\Thomas\\Desktop\\school\\hello world 2020\\chromedriver')
-alphabet_array = list(string.ascii_lowercase)
+alphabet_array = list(string.ascii_uppercase)
 print(alphabet_array)
 url = "https://www.advfn.com/nasdaq/nasdaq.asp?companies="
 for letter in alphabet_array:
