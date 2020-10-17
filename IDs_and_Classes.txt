@@ -1,0 +1,27 @@
+Image IDs
+
+Website = finance.yahoo.com/quote/{STOCK}
+
+	Yahoo Finance Recommendation = "Col2-7-QuoteModule-Proxy"
+	Yahoo Finance Rec 2 = "Col2-8-QuoteModule-Proxy"
+	Yahoo Finance Price Expectation = "Col2-9-QuoteModule-Proxy"
+
+Website = zacks.com/stock/quote/{STOCK}
+
+	Overall Recommendation = "quote_ribbon_v2"
+
+Website = "money.cnn.com/quote/forecast/forecast.html?symb={STOCK}"
+
+	Overall Recommendation = "wsod_chart"
+
+Image Classes
+
+Website = barchart.com/stocks/quotes/{STOCK}
+
+	Overall Recommendation = "background-widget js-share-opinion-widget less-margin"
+	
+
+
+
+	
+
